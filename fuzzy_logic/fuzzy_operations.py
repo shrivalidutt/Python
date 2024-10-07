@@ -151,8 +151,8 @@ class FuzzySet:
         """
         return FuzzySet(
             f"{self.name} U {other.name}",
-            min(self.left_boundary, other.left_boundary),
-            max(self.right_boundary, other.right_boundary),
+            max(self.left_boundary, other.left_boundary),
+            min(self.right_boundary, other.right_boundary),
             (self.peak + other.peak) / 2,
         )
 
